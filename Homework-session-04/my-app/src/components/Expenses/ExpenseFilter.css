@@ -1,5 +1,6 @@
 .expense-filter {
     padding: .2rem 1rem;
+    text-align: end;
 }
 
 .expense-filter__controll label {
