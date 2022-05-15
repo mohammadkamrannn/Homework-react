@@ -1,0 +1,17 @@
+.expense-filter {
+    padding: .2rem 1rem;
+}
+
+.expense-filter__controll label {
+    color: #fff;
+    margin-right: 1rem;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.expense-filter__controll select {
+    width: 15%;
+    padding: .3rem;
+    font-size: 18px;
+    border-radius: 5px;
+}
