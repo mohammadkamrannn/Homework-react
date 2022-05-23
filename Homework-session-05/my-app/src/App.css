@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+}
+body {
+    background-color: #eee;
+    width: 960px;
+    margin: 1rem auto;
+    font-family: sans-serif;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-end {
+    justify-content: end;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center
+}
+
+.align-items-top {
+    align-items: top
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}

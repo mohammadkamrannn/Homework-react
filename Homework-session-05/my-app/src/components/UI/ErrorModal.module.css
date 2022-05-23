@@ -1,0 +1,52 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 49;
+}
+
+.modal {
+    position: fixed;
+    top: 30vh;
+    left: 35%;
+    width: 30%;
+    background-color: #fff;
+    border-radius: 10px;
+    z-index: 50;
+}
+
+.header {
+    background-color: #be3434;
+    padding: 1rem;
+    border-radius: 10px 10px 0 0;
+}
+
+.header h2 {
+    margin: 0;
+    color: #fff;
+}
+
+.content {
+    padding: 1rem;
+}
+
+.content p {
+    font-size: 1.2rem;
+}
+
+.actions {
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.actions button {
+    padding: .2rem .5rem;
+    background-color: #aaa;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 1rem;
+}
