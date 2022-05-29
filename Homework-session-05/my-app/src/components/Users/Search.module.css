@@ -4,10 +4,10 @@
     font-family: sans-serif;
     font-size: 1rem;
     width: 400px;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
 }
 
-.search h2 {
+/* .search h2 {
     margin-bottom: 1rem;
 }
 
@@ -15,4 +15,4 @@ ul li {
     font-size: 1.2rem;
     color: #555;
     margin-bottom: .3rem;
-}
+} */

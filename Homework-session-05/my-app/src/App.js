@@ -5,13 +5,27 @@ import AddUser from './components/Users/AddUser';
 
 import UsersList from './components/Users/UsersList';
 
+import Search from './components/Users/Search';
+
+
 import './App.css';
 import ErrorModal from './components/UI/ErrorModal';
 
 function App() {
 
   const [usersList, setUsersList] = useState([]);
+  const [filteredUserList, setFilteredUserList] = useState([]);
   const [error, setError] = useState(false);
+
+  let filteredUsers = null;
+  const onSearchHandler = (query) => {
+    if (query === '') {
+      setFilteredUserList(usersList);
+      return;
+    }
+    // filteredUsers = usersList.filter(user => user.email.includes(query));
+    setFilteredUserList(usersList.filter(user => user.email.includes(query)));
+  }
 
   const addUserHandler = (email, age) => {
 
@@ -41,6 +55,9 @@ function App() {
     setUsersList(prevUserList => {
       return [...usersList, {email, age, id: Math.random().toString()}];
     });
+    setFilteredUserList(prevUserList => {
+      return [...usersList, {email, age, id: Math.random().toString()}];
+    });
   }
 
   const closeModalHandler = () => {
@@ -56,7 +73,8 @@ function App() {
       <div className='d-flex justify-content-between align-items-top'>
         <AddUser addUser={addUserHandler} />
       </div>
-      <UsersList users={usersList} />
+      <Search onSearch={onSearchHandler} />
+      <UsersList users={filteredUserList} />
     </>
   );
 }

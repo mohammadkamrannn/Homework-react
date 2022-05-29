@@ -2,8 +2,6 @@ import React from 'react';
 
 import UserItem from './UserItem';
 
-import Search from './Search';
-
 import classes from "./UsersList.module.css";
 
 const UsersList = props => {
@@ -16,7 +14,6 @@ const UsersList = props => {
         }
         return (
             <div className={classes.userList}>
-                <Search />
                 <ul>
                     {props.users.map(user => (
                         <UserItem 
